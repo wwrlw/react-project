@@ -8,6 +8,7 @@ import instagram from './img/icons/instagram.svg'
 import linkedIn from './img/icons/linkedIn.svg'
 
 import Navbar from './components/navbar/Navabar';
+import Header from './components/header/header';
 
 
 function App() {
@@ -15,15 +16,9 @@ function App() {
     <div className="App">
           
         <Navbar/>
-    <header className="header">
-        <div className="header__wrapper">
-            <h1 className="header__title">
-                <strong>Итоги года 2022 </strong>проголосуй за <p>любимую песню</p>
-            </h1>
 
-            <a href="/projects.html" className="btn">Проголосовать!</a>
-        </div>
-    </header>
+        <Header/>
+
 
     <main className="section">
         <div className="container">
