@@ -1,11 +1,11 @@
 
-import poster2 from  '../img/posters/poster-2.png'
-import poster3 from  '../img/posters/poster-3.png'
-import poster4 from '../img/posters/poster-4.png'
-import poster5 from '../img/posters/poster-5.png'
-import poster6 from '../img/posters/poster-6.png'
+// import poster2 from  '../img/posters/poster-2.png'
+// import poster3 from  '../img/posters/poster-3.png'
+// import poster4 from '../img/posters/poster-4.png'
+// import poster5 from '../img/posters/poster-5.png'
+// import poster6 from '../img/posters/poster-6.png'
 import Header from '../components/header/Header';
-import Nominate from '../components/Nominate/Nomnate'
+import Nominate from '../components/Nominate/Nomnate';
 
 const Nomination = () =>{
     return(
