@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home'
 import Nomination from './pages/Nomination';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -14,9 +15,11 @@ function App() {
     <div className="App">
           
         <Navbar/>
-        {/* <Home/> */}
-        <Nomination/>
+        <Home/>
+        {/* <Nomination/> */}
+        {/* <Contact/> */}
         <Footer/>
+
     </div>
   );
 }
