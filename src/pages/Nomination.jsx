@@ -6,6 +6,8 @@
 // import poster6 from '../img/posters/poster-6.png'
 import Header from '../components/header/Header';
 import Nominate from '../components/Nominate/Nomnate';
+import {nomination} from '../components/help-elements/NominationList';
+
 
 const Nomination = () =>{
     return(
@@ -17,9 +19,15 @@ const Nomination = () =>{
 <div className="container">
     <h2 className="title-1">Номинации:</h2>
     <ul className="projects">
-        <Nominate/>
-        <Nominate/>
-        <Nominate/>
+
+        {nomination.map((nomination) =>{
+            return(
+                <Nominate title={nomination.title} img={nomination.img}
+                    />
+            )
+        })}
+
+ 
 
         
         

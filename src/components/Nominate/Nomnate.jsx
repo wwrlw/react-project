@@ -1,13 +1,14 @@
 import './nominate.css';
 import poster1 from '../../img/posters/poster-1.png'
 
-const Nominate = () =>{
+
+const Nominate = ({title, img}) =>{
     return(
         <div>
             <li className="project">
             <a href="/project-page1.html">
-                <img src={poster1} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Артист года</h3>
+                <img src={img} alt={title} className="project__img"/>
+                <h3 className="project__title">{title}</h3>
             </a>
         </li>
         </div>
