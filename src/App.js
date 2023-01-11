@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer';
 import Home from './pages/Home'
 import Nomination from './pages/Nomination';
 import Contact from './pages/Contact';
+import Nomination_detail from './pages/Nomination_detail';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
           
         <Navbar/>
         {/* <Home/> */}
-         <Nomination/>
+         {/* <Nomination/> */}
+         <Nomination_detail/>
         {/* <Contact/> */}
         <Footer/>
 
