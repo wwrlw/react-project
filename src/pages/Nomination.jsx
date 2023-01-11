@@ -14,7 +14,6 @@ const Nomination = () =>{
     return(
         <div>
 
-<Header/>
 
 <main className="section">
 <div className="container">

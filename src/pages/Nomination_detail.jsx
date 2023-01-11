@@ -1,6 +1,7 @@
 import image from '../img/posters/poster-1.png'
 
 
+
 const  Nomination_detail =()=>{
     return(
     

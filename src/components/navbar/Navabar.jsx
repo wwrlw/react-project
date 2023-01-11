@@ -1,13 +1,18 @@
 import sun from '../../img/icons/sun.svg';
 import moon from '../../img/icons/moon.svg';
 import './navbar.css'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () =>{
+
+
     return (
         <nav className="nav">
         <div className="container">
             <div class="nav-row">
-                <a href="./index.html" className="logo">NoVo</a>
+                <NavLink to='/' className="logo">
+                    <a>NoVo</a>
+                </NavLink>
 
                 <button className="dark-mode-btn">
                     <img src={sun} alt="Light mode" className="dark-mode-btn__icon"/>
@@ -15,9 +20,12 @@ const Navbar = () =>{
                 </button>
 
                 <ul className="nav-list">
-                    <li className="nav-list__item"><a href="./index.html" className="nav-list__link nav-list__link--active">Домашняя страница</a></li>
-                    <li className="nav-list__item"><a href="./projects.html" className="nav-list__link">Номинации</a></li>
-                    <li className="nav-list__item"><a href="./contacts.html" className="nav-list__link">Контакты</a></li>
+                    <NavLink to='/' className='nav-list__link'>Домашняя страница</NavLink>
+
+                    <NavLink to='/nomination' className='nav-list__link'>Номинации</NavLink>
+
+                    <NavLink to='/contact' className='nav-list__link'>Контакты</NavLink>
+
                 </ul>
             </div>
         </div>
