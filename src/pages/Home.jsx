@@ -1,4 +1,5 @@
 import Header from '../components/header/Header';
+import { NavLink } from 'react-router-dom';
 const Home = () =>{
     return(
             <div>
@@ -13,8 +14,8 @@ const Home = () =>{
                                 </li>
                                 <li className="content-list__item">
                                     <h2 className="title-2">Чтобы выявить лучших из лучших вам необходимо проголосовать!</h2>
-                                    
-                                    <a href="/projects.html" className="btn">Проголосовать!</a>
+                                    <NavLink to='/nomination' className="btn">Проголосовать</NavLink>
+                                    {/* <a href="/projects.html" className="btn">Проголосовать!</a> */}
                                 </li>
                             </ul>
                             

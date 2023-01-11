@@ -24,7 +24,7 @@ const Navbar = () =>{
 
                     <NavLink to='/nomination' className='nav-list__link'>Номинации</NavLink>
 
-                    <NavLink to='/contact' className='nav-list__link'>Контакты</NavLink>
+                    <NavLink to='/lk' className='nav-list__link'>Личный кабинет</NavLink>
 
                 </ul>
             </div>

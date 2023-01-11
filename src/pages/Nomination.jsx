@@ -22,7 +22,7 @@ const Nomination = () =>{
 
         {filterNomination.map((nomination, index) =>{
             return(
-                <Nominate key={index} title={nomination.title} img={nomination.img}
+                <Nominate key={index} title={nomination.title} img={nomination.img} 
                     />
             )
         })}
@@ -38,7 +38,6 @@ const Nomination = () =>{
                                 <input type="text" placeholder="Введите название чего то там" 
                                 class="search__input"
                                 onChange={(event) => setValue(event.target.value)}/>
-                                <img src='#' alt="" class="search-icon"/>
                         </form>
                     </div>
         </div>

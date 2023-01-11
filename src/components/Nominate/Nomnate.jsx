@@ -1,15 +1,17 @@
 import './nominate.css';
+import { NavLink } from 'react-router-dom';
 
 const Nominate = ({title, img}) =>{
     return(
-        <div>
-            <li className="project">
-            <a href="/project-page1.html">
+        
+            <NavLink to='/nomination_detail'>
+                <li className="project">
                 <img src={img} alt={title} className="project__img"/>
                 <h3 className="project__title">{title}</h3>
-            </a>
         </li>
-        </div>
+            </NavLink>
+
+        
     );
 }
 export default Nominate;

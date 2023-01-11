@@ -1,0 +1,51 @@
+.container-lk{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control-one{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #000;
+    width: 50vh;
+    border-radius: 5px;
+    height: 48px;
+}
+
+.form-control-two{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #000;
+    width: 50vh;
+    border-radius: 5px;
+    height: 48px;
+}
+.h1-lk h1{
+    text-align: center;
+    font-size: 28px
+}
+
+.h1-lk h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 28px
+}
+.btn-lk{
+    margin-left: 40px;
+    display: inline-block;
+	height: 48px;
+	padding: 12px 28px;
+    width: auto ;
+	border-radius: 5px;
+	background-color: var(--black);
+	color: var(--white);
+	letter-spacing: 0.15px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 0.1s;
+}
+.btn:hover {
+	transform: scale(1.04);
+}
