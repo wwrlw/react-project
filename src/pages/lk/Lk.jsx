@@ -1,4 +1,5 @@
 import './lk.css'
+import { NavLink } from 'react-router-dom';
 const Lk = ()=>{
   return(
 
@@ -14,9 +15,13 @@ const Lk = ()=>{
 
                     <input type="text" id="password" className="form-control-two" required placeholder='пароль' />
                     <label htmlFor="password">Введите пароль</label>
-                </div>     
-                <button type='sumbit' className='btn-lk'>Войти</button>  
-                <button type='sumbit' className='btn-lk'>Зарегистрироваться</button>      
+                </div> 
+                <NavLink to="/">
+                <button type='sumbit' className='btn-lk'>Войти</button> 
+                </NavLink> 
+                <NavLink to="/">
+                <button type='sumbit' className='btn-lk'>Зарегистрироваться</button> 
+                </NavLink>   
               </form>
         </div>
 
@@ -26,3 +31,4 @@ const Lk = ()=>{
   );
 };
 export default Lk;
+

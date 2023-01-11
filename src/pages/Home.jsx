@@ -6,7 +6,7 @@ const Home = () =>{
               <Header/>
                 <main className="section">
                     <div className="container">
-
+                    
                             <ul className="content-list">
                                 <li className="content-list__item">
                                     <h2 className="title-2">Наше издание подготовило для вас 7 различных номинаций</h2>

@@ -1,4 +1,4 @@
-import Header from '../components/header/Header';
+// import Header from '../components/header/Header';
 import '../styles/main.css'
 import Nominate from '../components/Nominate/Nomnate';
 import {nomination} from '../components/help-elements/NominationList';
