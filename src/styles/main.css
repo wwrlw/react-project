@@ -168,22 +168,43 @@ body {
 	z-index: 9;
 }
 
+.form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+}
+.search__form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	border:1px solid #000;
+	height: 30px;
+	width: auto;
+}
+.search__input{
+	color: #000;
+	font-size: 16px;
+	opacity: 0.8;
+	transition: all 0.07s;
+}
 
-
-
+.search__input:hover{
+	opacity: 1;
+}
 
 
 
 .projects {
-	display: flex;
+	display: flex;	
 	justify-content: center;
 	flex-wrap: wrap;
 	column-gap: 30px;
 	row-gap: 30px;
 }
-
-
-
 
 .project-details {
 	margin: 0 auto;

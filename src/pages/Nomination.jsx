@@ -1,72 +1,58 @@
 
-// import poster2 from  '../img/posters/poster-2.png'
-// import poster3 from  '../img/posters/poster-3.png'
-// import poster4 from '../img/posters/poster-4.png'
-// import poster5 from '../img/posters/poster-5.png'
-// import poster6 from '../img/posters/poster-6.png'
+import '../styles/main.css'
 import Header from '../components/header/Header';
 import Nominate from '../components/Nominate/Nomnate';
 import {nomination} from '../components/help-elements/NominationList';
+import { useState } from 'react';
 
+// const [value, setValue] = useState()
+// const filterNomination = nomination.filter(nomination =>{
+//     return nomination.title.toLocaleLowerCase().includes(value.toLowerCase())
+// })
 
+// function useState(){
+//     const [value, setValue] = useState() 
+//     const filterNomination = nomination.filter(nomination =>{
+//         return nomination.title.toLocaleLowerCase().includes(value.toLowerCase())
+//     })
+// }
 const Nomination = () =>{
     return(
-        <div>
 
-<Header/>
+    <div>
+        <Header/>
+            <main className="section">
+                <div className="container">
+                <h2 className="title-1">Номинации:</h2>
+                <ul className="projects">
 
-<main className="section">
-<div className="container">
-    <h2 className="title-1">Номинации:</h2>
-    <ul className="projects">
+            {filterNomination.map((nomination, index) =>{
+                    return(
+                        <Nominate
+                        key={index}
+                        title={nomination.title} img={nomination.img}/>
+                    )
 
-        {nomination.map((nomination) =>{
-            return(
-                <Nominate title={nomination.title} img={nomination.img}
-                    />
-            )
-        })}
+                    
+                })}
 
- 
+                </ul>
+                <div class="form">
+                        <form class="search__form">
+                                <input type="text" placeholder="Введите название чего то там" 
+                                class="search__input"
+                                onChange={(event) => setValue(event.target.value)}/>
+                                <img src='#' alt="" class="search-icon"/>
+                        </form>
+                    </div>
+                </div>
+            </main>
 
-        
-        
-        {/* <li className="project">
-            <a href="/project-page1.html">
-                <img src={poster2} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Артистка года</h3>
-            </a>
-        </li>
-        <li className="project">
-            <a href="/project-page1.html">
-                <img src={poster3} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Группа года</h3>
-            </a>
-        </li>
-
-        <li className="project">
-            <a href="/project-page1.html"></a>
-                <img src={poster4} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Альбом года</h3>
-        </li>
-        <li className="project">
-            <a href="/project-page1.html"></a>
-                <img src={poster5} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Трек года</h3>
-        </li>
-        <li className="project">
-            <a href="/project-page1.html"></a>
-                <img src={poster6} alt="Project img" className="project__img"/>
-                <h3 className="project__title">Фит года</h3>
-        </li>
-
-    </ul> */}
-    </ul>
-</div>
-</main>
-
-        </div>
+    </div>
        
             );
+            
 }
+
+
 export default Nomination;

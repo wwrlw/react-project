@@ -1,6 +1,4 @@
 import './nominate.css';
-import poster1 from '../../img/posters/poster-1.png'
-
 
 const Nominate = ({title, img}) =>{
     return(
